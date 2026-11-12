@@ -1,0 +1,28 @@
+name: ci
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+      - name: gofmt
+        run: test -z "$(gofmt -l .)"
+      - run: go vet ./...
+      - name: staticcheck
+        run: go tool staticcheck ./...
+      - name: tests con detector de carreras (caracterización, integración y humo del benchmark)
+        run: go test -race -count=1 ./...
+      - name: cobertura
+        run: ./scripts/coverage.sh
+      - name: benchmark en modo humo (no compara tiempos)
+        run: go run ./cmd/bench -quick
+      - name: migración completa con cmd/migrate
+        run: ./scripts/migracion-medida.sh

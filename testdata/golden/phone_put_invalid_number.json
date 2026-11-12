@@ -1,0 +1,12 @@
+{
+  "request": {
+    "name": "phone_put_invalid_number",
+    "method": "PUT",
+    "path": "/customers/4/phone",
+    "body": "{\"phone\":\"15-0000-0000\"}"
+  },
+  "status": 200,
+  "body": {
+    "ok": true
+  }
+}

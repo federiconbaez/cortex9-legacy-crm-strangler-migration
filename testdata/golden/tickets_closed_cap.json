@@ -1,0 +1,533 @@
+{
+  "request": {
+    "name": "tickets_closed_cap",
+    "method": "GET",
+    "path": "/tickets?status=closed\u0026limit=500"
+  },
+  "status": 200,
+  "body": {
+    "count": 52,
+    "items": [
+      {
+        "agent": "Julián Juárez",
+        "created": "30/06/2026 04:33",
+        "customer": "ZÁRATE, Gabriela",
+        "id": 20,
+        "interactions": 1,
+        "priority": "baja",
+        "status": "closed",
+        "subject": "Devolución pendiente"
+      },
+      {
+        "agent": "Lucía Gómez",
+        "created": "28/04/2026 05:35",
+        "customer": "IBÁÑEZ, Facundo",
+        "id": 43,
+        "interactions": 1,
+        "priority": "baja",
+        "status": "closed",
+        "subject": "Baja del servicio"
+      },
+      {
+        "agent": "",
+        "created": "28/02/2026 23:38",
+        "customer": "ORTIZ, Ñandú",
+        "id": 52,
+        "interactions": 5,
+        "priority": "",
+        "status": "closed",
+        "subject": "No llega el pedido"
+      },
+      {
+        "agent": "Lucía Gómez",
+        "created": "27/10/2026 22:26",
+        "customer": "LÓPEZ, Facundo",
+        "id": 85,
+        "interactions": 2,
+        "priority": "media",
+        "status": "closed",
+        "subject": "Reclamo de facturación"
+      },
+      {
+        "agent": "Lucía Gómez",
+        "created": "27/07/2026 06:16",
+        "customer": "IBÁÑEZ, Tomás",
+        "id": 42,
+        "interactions": 5,
+        "priority": "media",
+        "status": "closed",
+        "subject": "Reclamo de facturación"
+      },
+      {
+        "agent": "Julián Juárez",
+        "created": "27/04/2026 10:54",
+        "customer": "NÚÑEZ, Facundo",
+        "id": 110,
+        "interactions": 4,
+        "priority": "baja",
+        "status": "closed",
+        "subject": "Baja del servicio"
+      },
+      {
+        "agent": "Óscar Sosa",
+        "created": "26/01/2026 21:34",
+        "customer": "NÚÑEZ, Facundo",
+        "id": 41,
+        "interactions": 3,
+        "priority": "baja",
+        "status": "closed",
+        "subject": "Cambio de domicilio"
+      },
+      {
+        "agent": "Julián Juárez",
+        "created": "25/04/2026 09:02",
+        "customer": "FERNÁNDEZ, Lucía",
+        "id": 98,
+        "interactions": 0,
+        "priority": "",
+        "status": "closed",
+        "subject": "Cambio de domicilio"
+      },
+      {
+        "agent": "",
+        "created": "23/08/2026 07:45",
+        "customer": "PEREYRA, Sofía",
+        "id": 7,
+        "interactions": 3,
+        "priority": "media",
+        "status": "closed",
+        "subject": "Baja del servicio"
+      },
+      {
+        "agent": "Óscar Sosa",
+        "created": "23/06/2026 21:16",
+        "customer": "PEREYRA, Sofía",
+        "id": 38,
+        "interactions": 2,
+        "priority": "alta",
+        "status": "closed",
+        "subject": "No llega el pedido"
+      },
+      {
+        "agent": "",
+        "created": "23/06/2026 06:38",
+        "customer": "GÓMEZ, Diego",
+        "id": 37,
+        "interactions": 6,
+        "priority": "media",
+        "status": "closed",
+        "subject": "Consulta de envío"
+      },
+      {
+        "agent": "Natalia Pereyra",
+        "created": "23/05/2026 16:04",
+        "customer": "JUÁREZ, Ñandú",
+        "id": 103,
+        "interactions": 5,
+        "priority": "alta",
+        "status": "closed",
+        "subject": "No llega el pedido"
+      },
+      {
+        "agent": "Inés Torres",
+        "created": "23/01/2026 01:34",
+        "customer": "CASTRO, Ana",
+        "id": 105,
+        "interactions": 5,
+        "priority": "baja",
+        "status": "closed",
+        "subject": "Reclamo de facturación"
+      },
+      {
+        "agent": "Natalia Pereyra",
+        "created": "22/05/2026 00:50",
+        "customer": "CASTRO, Lucía",
+        "id": 14,
+        "interactions": 8,
+        "priority": "baja",
+        "status": "closed",
+        "subject": "No llega el pedido"
+      },
+      {
+        "agent": "Inés Torres",
+        "created": "22/02/2026 16:24",
+        "customer": "GÓMEZ, Diego",
+        "id": 11,
+        "interactions": 6,
+        "priority": "baja",
+        "status": "closed",
+        "subject": "Baja del servicio"
+      },
+      {
+        "agent": "Julián Juárez",
+        "created": "21/07/2026 14:29",
+        "customer": "ZÁRATE, Gabriela",
+        "id": 54,
+        "interactions": 2,
+        "priority": "alta",
+        "status": "closed",
+        "subject": "Consulta de envío"
+      },
+      {
+        "agent": "Óscar Sosa",
+        "created": "21/02/2026 08:06",
+        "customer": "MEDINA, Carla",
+        "id": 31,
+        "interactions": 3,
+        "priority": "baja",
+        "status": "closed",
+        "subject": "Cambio de domicilio"
+      },
+      {
+        "agent": "Lucía Gómez",
+        "created": "19/04/2026 11:23",
+        "customer": "PEREYRA, Hernán",
+        "id": 60,
+        "interactions": 4,
+        "priority": "media",
+        "status": "closed",
+        "subject": "Devolución pendiente"
+      },
+      {
+        "agent": "Julián Juárez",
+        "created": "19/04/2026 10:30",
+        "customer": "PEREYRA, Hernán",
+        "id": 25,
+        "interactions": 4,
+        "priority": "baja",
+        "status": "closed",
+        "subject": "Reclamo de facturación"
+      },
+      {
+        "agent": "Natalia Pereyra",
+        "created": "19/03/2026 23:51",
+        "customer": "CASTRO, Gabriela",
+        "id": 88,
+        "interactions": 5,
+        "priority": "baja",
+        "status": "closed",
+        "subject": "Consulta de envío"
+      },
+      {
+        "agent": "Lucía Gómez",
+        "created": "18/04/2026 22:25",
+        "customer": "ORTIZ, Ñandú",
+        "id": 89,
+        "interactions": 0,
+        "priority": "media",
+        "status": "closed",
+        "subject": "Reclamo de facturación"
+      },
+      {
+        "agent": "Natalia Pereyra",
+        "created": "16/10/2026 04:53",
+        "customer": "NÚÑEZ, Facundo",
+        "id": 71,
+        "interactions": 4,
+        "priority": "baja",
+        "status": "closed",
+        "subject": "Cambio de domicilio"
+      },
+      {
+        "agent": "Inés Torres",
+        "created": "16/10/2026 01:34",
+        "customer": "GÓMEZ, Hernán",
+        "id": 67,
+        "interactions": 3,
+        "priority": "baja",
+        "status": "closed",
+        "subject": "Cambio de domicilio"
+      },
+      {
+        "agent": "Óscar Sosa",
+        "created": "16/02/2026 23:54",
+        "customer": "ORTIZ, Natalia",
+        "id": 83,
+        "interactions": 2,
+        "priority": "baja",
+        "status": "closed",
+        "subject": "Error al pagar \u003ctarjeta\u003e"
+      },
+      {
+        "agent": "",
+        "created": "15/04/2026 05:42",
+        "customer": "LÓPEZ, Sofía",
+        "id": 116,
+        "interactions": 6,
+        "priority": "alta",
+        "status": "closed",
+        "subject": "Error al pagar \u003ctarjeta\u003e"
+      },
+      {
+        "agent": "Inés Torres",
+        "created": "14/10/2026 08:59",
+        "customer": "ORTIZ, Natalia",
+        "id": 62,
+        "interactions": 9,
+        "priority": "alta",
+        "status": "closed",
+        "subject": "Reclamo de facturación"
+      },
+      {
+        "agent": "Lucía Gómez",
+        "created": "14/07/2026 16:35",
+        "customer": "LÓPEZ, Facundo",
+        "id": 56,
+        "interactions": 3,
+        "priority": "baja",
+        "status": "closed",
+        "subject": "Cambio de domicilio"
+      },
+      {
+        "agent": "Óscar Sosa",
+        "created": "13/07/2026 06:58",
+        "customer": "GÓMEZ, Diego",
+        "id": 102,
+        "interactions": 1,
+        "priority": "media",
+        "status": "closed",
+        "subject": "No llega el pedido"
+      },
+      {
+        "agent": "Inés Torres",
+        "created": "13/02/2026 20:47",
+        "customer": "NÚÑEZ, Martín",
+        "id": 87,
+        "interactions": 6,
+        "priority": "baja",
+        "status": "closed",
+        "subject": "Baja del servicio"
+      },
+      {
+        "agent": "Natalia Pereyra",
+        "created": "12/09/2026 09:41",
+        "customer": "CASTRO, Lucía",
+        "id": 115,
+        "interactions": 5,
+        "priority": "media",
+        "status": "closed",
+        "subject": "Cambio de domicilio"
+      },
+      {
+        "agent": "Natalia Pereyra",
+        "created": "12/09/2026 08:56",
+        "customer": "GÓMEZ, Diego",
+        "id": 47,
+        "interactions": 6,
+        "priority": "media",
+        "status": "closed",
+        "subject": "Consulta de envío"
+      },
+      {
+        "agent": "Natalia Pereyra",
+        "created": "12/07/2026 07:49",
+        "customer": "MEDINA, Carla",
+        "id": 16,
+        "interactions": 4,
+        "priority": "media",
+        "status": "closed",
+        "subject": "Consulta de envío"
+      },
+      {
+        "agent": "Óscar Sosa",
+        "created": "12/06/2026 09:22",
+        "customer": "PEREYRA, Sofía",
+        "id": 3,
+        "interactions": 2,
+        "priority": "alta",
+        "status": "closed",
+        "subject": "Cambio de domicilio"
+      },
+      {
+        "agent": "",
+        "created": "11/04/2026 06:59",
+        "customer": "LÓPEZ, Natalia",
+        "id": 36,
+        "interactions": 2,
+        "priority": "media",
+        "status": "closed",
+        "subject": "Devolución pendiente"
+      },
+      {
+        "agent": "Lucía Gómez",
+        "created": "10/09/2026 14:32",
+        "customer": "PEREYRA, Hernán",
+        "id": 79,
+        "interactions": 5,
+        "priority": "baja",
+        "status": "closed",
+        "subject": "Cambio de domicilio"
+      },
+      {
+        "agent": "Lucía Gómez",
+        "created": "10/07/2026 05:00",
+        "customer": "LÓPEZ, Ramiro",
+        "id": 66,
+        "interactions": 5,
+        "priority": "media",
+        "status": "closed",
+        "subject": "No llega el pedido"
+      },
+      {
+        "agent": "Óscar Sosa",
+        "created": "10/05/2026 05:31",
+        "customer": "ZÁRATE, Gabriela",
+        "id": 40,
+        "interactions": 3,
+        "priority": "media",
+        "status": "closed",
+        "subject": "Consulta de envío"
+      },
+      {
+        "agent": "Óscar Sosa",
+        "created": "10/02/2026 00:07",
+        "customer": "PEREYRA, Hernán",
+        "id": 113,
+        "interactions": 8,
+        "priority": "alta",
+        "status": "closed",
+        "subject": "No llega el pedido"
+      },
+      {
+        "agent": "Óscar Sosa",
+        "created": "09/06/2026 07:56",
+        "customer": "CASTRO, Ana",
+        "id": 13,
+        "interactions": 3,
+        "priority": "alta",
+        "status": "closed",
+        "subject": "Consulta de envío"
+      },
+      {
+        "agent": "Lucía Gómez",
+        "created": "08/10/2026 11:06",
+        "customer": "FERNÁNDEZ, Ana",
+        "id": 10,
+        "interactions": 1,
+        "priority": "baja",
+        "status": "closed",
+        "subject": "Reclamo de facturación"
+      },
+      {
+        "agent": "",
+        "created": "08/07/2026 17:52",
+        "customer": "CASTRO, Lucía",
+        "id": 59,
+        "interactions": 3,
+        "priority": "media",
+        "status": "closed",
+        "subject": "Reclamo de facturación"
+      },
+      {
+        "agent": "",
+        "created": "08/04/2026 12:40",
+        "customer": "FERNÁNDEZ, Lucía",
+        "id": 55,
+        "interactions": 4,
+        "priority": "media",
+        "status": "closed",
+        "subject": "No llega el pedido"
+      },
+      {
+        "agent": "Natalia Pereyra",
+        "created": "07/07/2026 08:08",
+        "customer": "CASTRO, Ana",
+        "id": 111,
+        "interactions": 4,
+        "priority": "media",
+        "status": "closed",
+        "subject": "Producto dañado"
+      },
+      {
+        "agent": "",
+        "created": "06/09/2026 23:49",
+        "customer": "FERNÁNDEZ, Ana",
+        "id": 28,
+        "interactions": 5,
+        "priority": "",
+        "status": "closed",
+        "subject": "Error al pagar \u003ctarjeta\u003e"
+      },
+      {
+        "agent": "Julián Juárez",
+        "created": "06/06/2026 04:23",
+        "customer": "GÓMEZ, Elena",
+        "id": 95,
+        "interactions": 8,
+        "priority": "media",
+        "status": "closed",
+        "subject": "Producto dañado"
+      },
+      {
+        "agent": "Inés Torres",
+        "created": "05/08/2026 12:41",
+        "customer": "ORTIZ, Ñandú",
+        "id": 5,
+        "interactions": 2,
+        "priority": "media",
+        "status": "closed",
+        "subject": "Baja del servicio"
+      },
+      {
+        "agent": "Julián Juárez",
+        "created": "03/03/2026 18:58",
+        "customer": "LÓPEZ, Ramiro",
+        "id": 61,
+        "interactions": 3,
+        "priority": "media",
+        "status": "closed",
+        "subject": "Consulta de envío"
+      },
+      {
+        "agent": "Lucía Gómez",
+        "created": "03/03/2026 18:12",
+        "customer": "CASTRO, Gabriela",
+        "id": 44,
+        "interactions": 4,
+        "priority": "media",
+        "status": "closed",
+        "subject": "Devolución pendiente"
+      },
+      {
+        "agent": "Inés Torres",
+        "created": "02/10/2026 09:18",
+        "customer": "ZÁRATE, Gabriela",
+        "id": 104,
+        "interactions": 0,
+        "priority": "alta",
+        "status": "closed",
+        "subject": "Producto dañado"
+      },
+      {
+        "agent": "",
+        "created": "02/09/2026 00:50",
+        "customer": "ACOSTA, Valeria",
+        "id": 90,
+        "interactions": 3,
+        "priority": "baja",
+        "status": "closed",
+        "subject": "Reclamo de facturación"
+      },
+      {
+        "agent": "Lucía Gómez",
+        "created": "02/07/2026 12:26",
+        "customer": "IBÁÑEZ, Tomás",
+        "id": 81,
+        "interactions": 5,
+        "priority": "alta",
+        "status": "closed",
+        "subject": "Reclamo de facturación"
+      },
+      {
+        "agent": "Natalia Pereyra",
+        "created": "01/09/2026 14:43",
+        "customer": "FERNÁNDEZ, Ana",
+        "id": 74,
+        "interactions": 8,
+        "priority": "alta",
+        "status": "closed",
+        "subject": "Error al pagar \u003ctarjeta\u003e"
+      }
+    ]
+  }
+}

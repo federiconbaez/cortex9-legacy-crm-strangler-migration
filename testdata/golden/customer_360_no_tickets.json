@@ -1,0 +1,25 @@
+{
+  "request": {
+    "name": "customer_360_no_tickets",
+    "method": "GET",
+    "path": "/customers/29/360"
+  },
+  "status": 200,
+  "body": {
+    "customer": {
+      "created": "26/01/2026 16:25",
+      "email": "cliente0029@example.com",
+      "id": 29,
+      "name": "NÚÑEZ, Martín",
+      "phone": "+54 11 3776-8663",
+      "segment": "corporativo"
+    },
+    "stats": {
+      "avg_first_response_minutes": 0,
+      "interactions": 0,
+      "open_tickets": 0,
+      "total_tickets": 0
+    },
+    "tickets": null
+  }
+}

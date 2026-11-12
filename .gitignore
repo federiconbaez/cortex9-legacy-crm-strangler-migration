@@ -1,0 +1,12 @@
+# bases y binarios locales
+*.db
+*.db-wal
+*.db-shm
+/crm-*
+*.test
+*.out
+*.prof
+/tmp/
+.idea/
+.vscode/
+.DS_Store

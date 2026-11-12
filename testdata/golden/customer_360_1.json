@@ -1,0 +1,334 @@
+{
+  "request": {
+    "name": "customer_360_1",
+    "method": "GET",
+    "path": "/customers/1/360"
+  },
+  "status": 200,
+  "body": {
+    "customer": {
+      "created": "25/01/2026 04:47",
+      "email": "cliente0001@example.com",
+      "id": 1,
+      "name": "NÚÑEZ, Facundo",
+      "phone": "011 2591-8339",
+      "segment": "corporativo"
+    },
+    "stats": {
+      "avg_first_response_minutes": 340,
+      "interactions": 34,
+      "open_tickets": 4,
+      "total_tickets": 7
+    },
+    "tickets": [
+      {
+        "agent": "Óscar Sosa",
+        "created": "26/01/2026 21:34",
+        "id": 41,
+        "interactions": [
+          {
+            "agent": "",
+            "at": "27/01/2026 04:54",
+            "body": "Ya lo revisamos",
+            "channel": "chat",
+            "id": 201
+          },
+          {
+            "agent": "Óscar Sosa",
+            "at": "27/01/2026 11:17",
+            "body": "Cliente no responde",
+            "channel": "phone",
+            "id": 352
+          },
+          {
+            "agent": "Óscar Sosa",
+            "at": "27/01/2026 18:57",
+            "body": "Ya lo revisamos",
+            "channel": "whatsapp",
+            "id": 432
+          }
+        ],
+        "priority": "baja",
+        "status": "closed",
+        "subject": "Cambio de domicilio"
+      },
+      {
+        "agent": "Óscar Sosa",
+        "created": "31/01/2026 18:46",
+        "id": 46,
+        "interactions": [
+          {
+            "agent": "",
+            "at": "01/02/2026 04:28",
+            "body": "¿Me confirman el número de seguimiento?",
+            "channel": "whatsapp",
+            "id": 202
+          },
+          {
+            "agent": "Óscar Sosa",
+            "at": "01/02/2026 04:36",
+            "body": "Gracias \u0026 saludos",
+            "channel": "chat",
+            "id": 218
+          }
+        ],
+        "priority": "alta",
+        "status": "open",
+        "subject": "Cambio de domicilio"
+      },
+      {
+        "agent": "Óscar Sosa",
+        "created": "04/02/2026 11:11",
+        "id": 53,
+        "interactions": [
+          {
+            "agent": "Óscar Sosa",
+            "at": "04/02/2026 16:14",
+            "body": "Se reprocesó el pago",
+            "channel": "phone",
+            "id": 102
+          },
+          {
+            "agent": "Óscar Sosa",
+            "at": "04/02/2026 21:30",
+            "body": "Gracias \u0026 saludos",
+            "channel": "chat",
+            "id": 146
+          },
+          {
+            "agent": "",
+            "at": "05/02/2026 06:44",
+            "body": "Hola, necesito ayuda",
+            "channel": "chat",
+            "id": 380
+          },
+          {
+            "agent": "Óscar Sosa",
+            "at": "05/02/2026 15:14",
+            "body": "Escalado a nivel 2",
+            "channel": "whatsapp",
+            "id": 392
+          },
+          {
+            "agent": "",
+            "at": "05/02/2026 17:08",
+            "body": "Se reprocesó el pago",
+            "channel": "phone",
+            "id": 403
+          },
+          {
+            "agent": "Óscar Sosa",
+            "at": "05/02/2026 23:19",
+            "body": "Gracias \u0026 saludos",
+            "channel": "chat",
+            "id": 465
+          },
+          {
+            "agent": "",
+            "at": "06/02/2026 00:20",
+            "body": "Ya lo revisamos",
+            "channel": "whatsapp",
+            "id": 469
+          }
+        ],
+        "priority": "media",
+        "status": "pending",
+        "subject": "Consulta de envío"
+      },
+      {
+        "agent": "Julián Juárez",
+        "created": "19/01/2026 10:12",
+        "id": 68,
+        "interactions": [
+          {
+            "agent": "Julián Juárez",
+            "at": "19/01/2026 14:10",
+            "body": "Hola, necesito ayuda",
+            "channel": "chat",
+            "id": 68
+          },
+          {
+            "agent": "Julián Juárez",
+            "at": "19/01/2026 20:17",
+            "body": "Gracias \u0026 saludos",
+            "channel": "chat",
+            "id": 104
+          },
+          {
+            "agent": "",
+            "at": "20/01/2026 01:22",
+            "body": "Gracias \u0026 saludos",
+            "channel": "phone",
+            "id": 280
+          },
+          {
+            "agent": "",
+            "at": "20/01/2026 06:07",
+            "body": "¿Me confirman el número de seguimiento?",
+            "channel": "email",
+            "id": 347
+          },
+          {
+            "agent": "",
+            "at": "20/01/2026 08:55",
+            "body": "Hola, necesito ayuda",
+            "channel": "phone",
+            "id": 385
+          }
+        ],
+        "priority": "alta",
+        "status": "pending",
+        "subject": "No llega el pedido"
+      },
+      {
+        "agent": "Natalia Pereyra",
+        "created": "16/10/2026 04:53",
+        "id": 71,
+        "interactions": [
+          {
+            "agent": "Natalia Pereyra",
+            "at": "16/10/2026 07:14",
+            "body": "Escalado a nivel 2",
+            "channel": "phone",
+            "id": 78
+          },
+          {
+            "agent": "",
+            "at": "16/10/2026 08:55",
+            "body": "Escalado a nivel 2",
+            "channel": "chat",
+            "id": 350
+          },
+          {
+            "agent": "",
+            "at": "16/10/2026 12:14",
+            "body": "Gracias \u0026 saludos",
+            "channel": "chat",
+            "id": 368
+          },
+          {
+            "agent": "",
+            "at": "16/10/2026 19:36",
+            "body": "Se reprocesó el pago",
+            "channel": "whatsapp",
+            "id": 457
+          }
+        ],
+        "priority": "baja",
+        "status": "closed",
+        "subject": "Cambio de domicilio"
+      },
+      {
+        "agent": "Julián Juárez",
+        "created": "27/04/2026 10:54",
+        "id": 110,
+        "interactions": [
+          {
+            "agent": "",
+            "at": "27/04/2026 14:02",
+            "body": "¿Me confirman el número de seguimiento?",
+            "channel": "email",
+            "id": 13
+          },
+          {
+            "agent": "Natalia Pereyra",
+            "at": "27/04/2026 15:20",
+            "body": "Se reprocesó el pago",
+            "channel": "chat",
+            "id": 159
+          },
+          {
+            "agent": "Julián Juárez",
+            "at": "27/04/2026 19:09",
+            "body": "Cliente no responde",
+            "channel": "whatsapp",
+            "id": 222
+          },
+          {
+            "agent": "Julián Juárez",
+            "at": "28/04/2026 01:42",
+            "body": "Hola, necesito ayuda",
+            "channel": "phone",
+            "id": 296
+          }
+        ],
+        "priority": "baja",
+        "status": "closed",
+        "subject": "Baja del servicio"
+      },
+      {
+        "agent": "Julián Juárez",
+        "created": "26/07/2026 05:35",
+        "id": 119,
+        "interactions": [
+          {
+            "agent": "Julián Juárez",
+            "at": "26/07/2026 05:55",
+            "body": "Ya lo revisamos",
+            "channel": "whatsapp",
+            "id": 59
+          },
+          {
+            "agent": "Julián Juárez",
+            "at": "26/07/2026 11:44",
+            "body": "Ya lo revisamos",
+            "channel": "chat",
+            "id": 65
+          },
+          {
+            "agent": "Julián Juárez",
+            "at": "26/07/2026 18:36",
+            "body": "Escalado a nivel 2",
+            "channel": "whatsapp",
+            "id": 80
+          },
+          {
+            "agent": "",
+            "at": "26/07/2026 22:41",
+            "body": "Se reprocesó el pago",
+            "channel": "chat",
+            "id": 129
+          },
+          {
+            "agent": "",
+            "at": "26/07/2026 23:16",
+            "body": "Hola, necesito ayuda",
+            "channel": "whatsapp",
+            "id": 164
+          },
+          {
+            "agent": "",
+            "at": "27/07/2026 00:17",
+            "body": "Se reprocesó el pago",
+            "channel": "chat",
+            "id": 216
+          },
+          {
+            "agent": "Óscar Sosa",
+            "at": "27/07/2026 02:38",
+            "body": "¿Me confirman el número de seguimiento?",
+            "channel": "email",
+            "id": 262
+          },
+          {
+            "agent": "Julián Juárez",
+            "at": "27/07/2026 03:36",
+            "body": "Gracias \u0026 saludos",
+            "channel": "chat",
+            "id": 276
+          },
+          {
+            "agent": "",
+            "at": "27/07/2026 10:13",
+            "body": "Ya lo revisamos",
+            "channel": "email",
+            "id": 464
+          }
+        ],
+        "priority": "media",
+        "status": "pending",
+        "subject": "Reclamo de facturación"
+      }
+    ]
+  }
+}

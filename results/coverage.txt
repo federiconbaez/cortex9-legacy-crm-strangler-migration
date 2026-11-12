@@ -1,0 +1,15 @@
+# go test -coverpkg=./internal/...,./legacy/... ./...
+total: 88.3%
+
+# por paquete: sentencias cubiertas / sentencias (con todos los tests del repo)
+internal/app 71.7% (33/46)
+internal/bench 90.8% (138/152)
+internal/facade 91.8% (291/317)
+internal/logging 100.0% (5/5)
+internal/metrics 91.4% (96/105)
+internal/migration 76.4% (133/174)
+internal/modern 87.2% (156/179)
+internal/phone 100.0% (19/19)
+internal/seed 87.9% (58/66)
+internal/store 87.1% (27/31)
+legacy 95.6% (129/135)

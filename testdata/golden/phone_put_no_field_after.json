@@ -1,0 +1,16 @@
+{
+  "request": {
+    "name": "phone_put_no_field_after",
+    "method": "GET",
+    "path": "/customers/5"
+  },
+  "status": 200,
+  "body": {
+    "created": "14/01/2026 21:41",
+    "email": "cliente0005@example.com",
+    "id": 5,
+    "name": "LÓPEZ, Sofía",
+    "phone": "",
+    "segment": "pyme"
+  }
+}

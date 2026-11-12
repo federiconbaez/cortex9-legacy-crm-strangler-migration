@@ -1,0 +1,16 @@
+{
+  "request": {
+    "name": "customer_get_1",
+    "method": "GET",
+    "path": "/customers/1"
+  },
+  "status": 200,
+  "body": {
+    "created": "25/01/2026 04:47",
+    "email": "cliente0001@example.com",
+    "id": 1,
+    "name": "NÚÑEZ, Facundo",
+    "phone": "011 2591-8339",
+    "segment": "corporativo"
+  }
+}

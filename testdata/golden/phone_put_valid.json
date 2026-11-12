@@ -1,0 +1,12 @@
+{
+  "request": {
+    "name": "phone_put_valid",
+    "method": "PUT",
+    "path": "/customers/3/phone",
+    "body": "{\"phone\":\"011 4000-1234\"}"
+  },
+  "status": 200,
+  "body": {
+    "ok": true
+  }
+}

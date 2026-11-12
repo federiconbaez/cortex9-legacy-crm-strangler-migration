@@ -1,0 +1,11 @@
+{
+  "request": {
+    "name": "customer_get_bad_id",
+    "method": "GET",
+    "path": "/customers/abc"
+  },
+  "status": 200,
+  "body": {
+    "error": "not found"
+  }
+}

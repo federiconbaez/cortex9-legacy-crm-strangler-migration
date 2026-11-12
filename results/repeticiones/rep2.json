@@ -1,0 +1,427 @@
+{
+  "environment": {
+    "cpu_model": "Intel(R) Xeon(R) Processor",
+    "date_utc": "2026-11-12T11:35:23Z",
+    "go": "go1.27.3",
+    "gomaxprocs": 8,
+    "num_cpu": 8,
+    "os_arch": "linux/amd64",
+    "sqlite": "modernc.org/sqlite (Go puro), WAL, archivo local, 8 conexiones"
+  },
+  "params": {
+    "dataset": {
+      "Customers": 800,
+      "Agents": 30,
+      "Tickets": 6000,
+      "Interactions": 30000,
+      "Seed": 42
+    },
+    "requests_per_endpoint": 300,
+    "warmup_per_endpoint": 20,
+    "query_count_sample": 20,
+    "concurrency": 4,
+    "request_seed": 2026
+  },
+  "scenarios": [
+    {
+      "name": "baseline-legacy",
+      "description": "Monolito legado directo, esquema legado (sin índices). LÍNEA BASE.",
+      "migration_phase": "none",
+      "endpoints": [
+        {
+          "endpoint": "customer_get",
+          "requests": 300,
+          "errors": 0,
+          "latency": {
+            "p50_ms": 0.07,
+            "p95_ms": 0.29,
+            "p99_ms": 0.58,
+            "max_ms": 0.74,
+            "mean_ms": 0.1
+          },
+          "throughput_rps": 40698.74,
+          "queries_per_request": 1,
+          "queries_min": 1,
+          "queries_max": 1,
+          "wall_seconds": 0.01,
+          "queries_include_shadow": false
+        },
+        {
+          "endpoint": "customer_360",
+          "requests": 300,
+          "errors": 0,
+          "latency": {
+            "p50_ms": 11.04,
+            "p95_ms": 19.01,
+            "p99_ms": 21.28,
+            "max_ms": 24.24,
+            "mean_ms": 10.73
+          },
+          "throughput_rps": 370.95,
+          "queries_per_request": 35.8,
+          "queries_min": 2,
+          "queries_max": 65,
+          "wall_seconds": 0.81,
+          "queries_include_shadow": false
+        },
+        {
+          "endpoint": "ticket_list",
+          "requests": 300,
+          "errors": 0,
+          "latency": {
+            "p50_ms": 76.36,
+            "p95_ms": 85.84,
+            "p99_ms": 89.83,
+            "max_ms": 97.92,
+            "mean_ms": 77.41
+          },
+          "throughput_rps": 51.42,
+          "queries_per_request": 142.25,
+          "queries_min": 137,
+          "queries_max": 145,
+          "wall_seconds": 5.83,
+          "queries_include_shadow": false
+        }
+      ]
+    },
+    {
+      "name": "legacy-con-indices",
+      "description": "Mismo código legado + solo los índices del expand. Aísla el efecto de los índices.",
+      "migration_phase": "none",
+      "endpoints": [
+        {
+          "endpoint": "customer_get",
+          "requests": 300,
+          "errors": 0,
+          "latency": {
+            "p50_ms": 0.07,
+            "p95_ms": 0.19,
+            "p99_ms": 0.56,
+            "max_ms": 0.72,
+            "mean_ms": 0.09
+          },
+          "throughput_rps": 45152.36,
+          "queries_per_request": 1,
+          "queries_min": 1,
+          "queries_max": 1,
+          "wall_seconds": 0.01,
+          "queries_include_shadow": false
+        },
+        {
+          "endpoint": "customer_360",
+          "requests": 300,
+          "errors": 0,
+          "latency": {
+            "p50_ms": 0.92,
+            "p95_ms": 1.72,
+            "p99_ms": 2,
+            "max_ms": 3.07,
+            "mean_ms": 0.96
+          },
+          "throughput_rps": 4141.43,
+          "queries_per_request": 35.8,
+          "queries_min": 2,
+          "queries_max": 65,
+          "wall_seconds": 0.07,
+          "queries_include_shadow": false
+        },
+        {
+          "endpoint": "ticket_list",
+          "requests": 300,
+          "errors": 0,
+          "latency": {
+            "p50_ms": 13.49,
+            "p95_ms": 20.53,
+            "p99_ms": 24.52,
+            "max_ms": 26.38,
+            "mean_ms": 14.57
+          },
+          "throughput_rps": 272.94,
+          "queries_per_request": 142.25,
+          "queries_min": 137,
+          "queries_max": 145,
+          "wall_seconds": 1.1,
+          "queries_include_shadow": false
+        }
+      ]
+    },
+    {
+      "name": "modern-sin-indices",
+      "description": "Código nuevo (sin N+1) sobre el esquema legado sin índices. Aísla el efecto del código.",
+      "migration_phase": "none",
+      "endpoints": [
+        {
+          "endpoint": "customer_get",
+          "requests": 300,
+          "errors": 0,
+          "latency": {
+            "p50_ms": 0.06,
+            "p95_ms": 0.16,
+            "p99_ms": 0.89,
+            "max_ms": 1.08,
+            "mean_ms": 0.09
+          },
+          "throughput_rps": 44243.98,
+          "queries_per_request": 1,
+          "queries_min": 1,
+          "queries_max": 1,
+          "wall_seconds": 0.01,
+          "queries_include_shadow": false
+        },
+        {
+          "endpoint": "customer_360",
+          "requests": 300,
+          "errors": 0,
+          "latency": {
+            "p50_ms": 66.34,
+            "p95_ms": 71.19,
+            "p99_ms": 72.96,
+            "max_ms": 82.86,
+            "mean_ms": 60.24
+          },
+          "throughput_rps": 66.3,
+          "queries_per_request": 2.8,
+          "queries_min": 2,
+          "queries_max": 3,
+          "wall_seconds": 4.52,
+          "queries_include_shadow": false
+        },
+        {
+          "endpoint": "ticket_list",
+          "requests": 300,
+          "errors": 0,
+          "latency": {
+            "p50_ms": 72.22,
+            "p95_ms": 78.08,
+            "p99_ms": 84.8,
+            "max_ms": 97.96,
+            "mean_ms": 73.05
+          },
+          "throughput_rps": 54.56,
+          "queries_per_request": 1,
+          "queries_min": 1,
+          "queries_max": 1,
+          "wall_seconds": 5.5,
+          "queries_include_shadow": false
+        }
+      ]
+    },
+    {
+      "name": "fachada-legacy",
+      "description": "Fachada strangler con todo en legacy. Mide el costo de la fachada.",
+      "migration_phase": "none",
+      "endpoints": [
+        {
+          "endpoint": "customer_get",
+          "requests": 300,
+          "errors": 0,
+          "latency": {
+            "p50_ms": 0.07,
+            "p95_ms": 0.16,
+            "p99_ms": 0.95,
+            "max_ms": 1.14,
+            "mean_ms": 0.09
+          },
+          "throughput_rps": 42312.49,
+          "queries_per_request": 1,
+          "queries_min": 1,
+          "queries_max": 1,
+          "wall_seconds": 0.01,
+          "queries_include_shadow": false
+        },
+        {
+          "endpoint": "customer_360",
+          "requests": 300,
+          "errors": 0,
+          "latency": {
+            "p50_ms": 11.42,
+            "p95_ms": 20.85,
+            "p99_ms": 24.55,
+            "max_ms": 36.28,
+            "mean_ms": 11.64
+          },
+          "throughput_rps": 341.84,
+          "queries_per_request": 35.8,
+          "queries_min": 2,
+          "queries_max": 65,
+          "wall_seconds": 0.88,
+          "queries_include_shadow": false
+        },
+        {
+          "endpoint": "ticket_list",
+          "requests": 300,
+          "errors": 0,
+          "latency": {
+            "p50_ms": 74.83,
+            "p95_ms": 82.63,
+            "p99_ms": 92.7,
+            "max_ms": 99.14,
+            "mean_ms": 75.88
+          },
+          "throughput_rps": 52.34,
+          "queries_per_request": 142.25,
+          "queries_min": 137,
+          "queries_max": 145,
+          "wall_seconds": 5.73,
+          "queries_include_shadow": false
+        }
+      ]
+    },
+    {
+      "name": "fachada-shadow",
+      "description": "Fachada en sombra (responde legacy, compara con modern) con la migración en verified.",
+      "migration_phase": "verified",
+      "endpoints": [
+        {
+          "endpoint": "customer_get",
+          "requests": 300,
+          "errors": 0,
+          "latency": {
+            "p50_ms": 0.09,
+            "p95_ms": 0.36,
+            "p99_ms": 0.74,
+            "max_ms": 0.9,
+            "mean_ms": 0.12
+          },
+          "throughput_rps": 31653.14,
+          "queries_per_request": 2,
+          "queries_min": 2,
+          "queries_max": 2,
+          "wall_seconds": 0.01,
+          "queries_include_shadow": true
+        },
+        {
+          "endpoint": "customer_360",
+          "requests": 300,
+          "errors": 0,
+          "latency": {
+            "p50_ms": 1.57,
+            "p95_ms": 3.04,
+            "p99_ms": 4.01,
+            "max_ms": 5.12,
+            "mean_ms": 1.64
+          },
+          "throughput_rps": 2425.51,
+          "queries_per_request": 38.6,
+          "queries_min": 4,
+          "queries_max": 68,
+          "wall_seconds": 0.12,
+          "queries_include_shadow": true
+        },
+        {
+          "endpoint": "ticket_list",
+          "requests": 300,
+          "errors": 0,
+          "latency": {
+            "p50_ms": 15.79,
+            "p95_ms": 23.16,
+            "p99_ms": 25.28,
+            "max_ms": 27.38,
+            "mean_ms": 16.57
+          },
+          "throughput_rps": 239.68,
+          "queries_per_request": 143.25,
+          "queries_min": 138,
+          "queries_max": 146,
+          "wall_seconds": 1.25,
+          "queries_include_shadow": true
+        }
+      ],
+      "shadow_report": {
+        "customer_360": {
+          "shadowed": 340,
+          "mismatches": 0,
+          "accepted_only": 0,
+          "dropped": 0,
+          "errors": 0,
+          "fallbacks": 0
+        },
+        "customer_get": {
+          "shadowed": 340,
+          "mismatches": 0,
+          "accepted_only": 0,
+          "dropped": 0,
+          "errors": 0,
+          "fallbacks": 0
+        },
+        "customer_phone_put": {
+          "shadowed": 0,
+          "mismatches": 0,
+          "accepted_only": 0,
+          "dropped": 0,
+          "errors": 0,
+          "fallbacks": 0
+        },
+        "ticket_list": {
+          "shadowed": 340,
+          "mismatches": 0,
+          "accepted_only": 0,
+          "dropped": 0,
+          "errors": 0,
+          "fallbacks": 0
+        }
+      }
+    },
+    {
+      "name": "final-modern",
+      "description": "Fachada con todo en modern, migración contraída (columna vieja borrada). ESTADO FINAL.",
+      "migration_phase": "contracted",
+      "endpoints": [
+        {
+          "endpoint": "customer_get",
+          "requests": 300,
+          "errors": 0,
+          "latency": {
+            "p50_ms": 0.08,
+            "p95_ms": 0.31,
+            "p99_ms": 0.57,
+            "max_ms": 0.63,
+            "mean_ms": 0.11
+          },
+          "throughput_rps": 36748.07,
+          "queries_per_request": 1,
+          "queries_min": 1,
+          "queries_max": 1,
+          "wall_seconds": 0.01,
+          "queries_include_shadow": false
+        },
+        {
+          "endpoint": "customer_360",
+          "requests": 300,
+          "errors": 0,
+          "latency": {
+            "p50_ms": 0.69,
+            "p95_ms": 1.25,
+            "p99_ms": 1.79,
+            "max_ms": 2.52,
+            "mean_ms": 0.73
+          },
+          "throughput_rps": 5419.94,
+          "queries_per_request": 2.8,
+          "queries_min": 2,
+          "queries_max": 3,
+          "wall_seconds": 0.06,
+          "queries_include_shadow": false
+        },
+        {
+          "endpoint": "ticket_list",
+          "requests": 300,
+          "errors": 0,
+          "latency": {
+            "p50_ms": 13.96,
+            "p95_ms": 36.93,
+            "p99_ms": 40.08,
+            "max_ms": 40.31,
+            "mean_ms": 18.3
+          },
+          "throughput_rps": 217.71,
+          "queries_per_request": 1,
+          "queries_min": 1,
+          "queries_max": 1,
+          "wall_seconds": 1.38,
+          "queries_include_shadow": false
+        }
+      ]
+    }
+  ]
+}

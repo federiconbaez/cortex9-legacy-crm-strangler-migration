@@ -1,0 +1,12 @@
+{
+  "request": {
+    "name": "phone_put_bad_json",
+    "method": "PUT",
+    "path": "/customers/3/phone",
+    "body": "{\"phone\":"
+  },
+  "status": 400,
+  "body": {
+    "error": "bad json"
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "request": {
+    "name": "customer_360_5",
+    "method": "GET",
+    "path": "/customers/5/360"
+  },
+  "status": 200,
+  "body": {
+    "customer": {
+      "created": "14/01/2026 21:41",
+      "email": "cliente0005@example.com",
+      "id": 5,
+      "name": "LÓPEZ, Sofía",
+      "phone": "+54 11 8712-9963",
+      "segment": "pyme"
+    },
+    "stats": {
+      "avg_first_response_minutes": 765,
+      "interactions": 11,
+      "open_tickets": 1,
+      "total_tickets": 2
+    },
+    "tickets": [
+      {
+        "agent": "",
+        "created": "04/03/2026 15:26",
+        "id": 84,
+        "interactions": [
+          {
+            "agent": "",
+            "at": "04/03/2026 21:41",
+            "body": "Se reprocesó el pago",
+            "channel": "chat",
+            "id": 193
+          },
+          {
+            "agent": "Inés Torres",
+            "at": "05/03/2026 02:52",
+            "body": "Gracias \u0026 saludos",
+            "channel": "chat",
+            "id": 226
+          },
+          {
+            "agent": "Julián Juárez",
+            "at": "05/03/2026 10:07",
+            "body": "¿Me confirman el número de seguimiento?",
+            "channel": "phone",
+            "id": 260
+          },
+          {
+            "agent": "Lucía Gómez",
+            "at": "05/03/2026 12:43",
+            "body": "¿Me confirman el número de seguimiento?",
+            "channel": "email",
+            "id": 340
+          },
+          {
+            "agent": "Inés Torres",
+            "at": "05/03/2026 21:38",
+            "body": "Ya lo revisamos",
+            "channel": "chat",
+            "id": 399
+          }
+        ],
+        "priority": "alta",
+        "status": "open",
+        "subject": "Cambio de domicilio"
+      },
+      {
+        "agent": "",
+        "created": "15/04/2026 05:42",
+        "id": 116,
+        "interactions": [
+          {
+            "agent": "",
+            "at": "15/04/2026 14:55",
+            "body": "Gracias \u0026 saludos",
+            "channel": "chat",
+            "id": 61
+          },
+          {
+            "agent": "Julián Juárez",
+            "at": "15/04/2026 19:47",
+            "body": "Ya lo revisamos",
+            "channel": "phone",
+            "id": 112
+          },
+          {
+            "agent": "Óscar Sosa",
+            "at": "16/04/2026 04:29",
+            "body": "Gracias \u0026 saludos",
+            "channel": "chat",
+            "id": 240
+          },
+          {
+            "agent": "Inés Torres",
+            "at": "16/04/2026 12:18",
+            "body": "¿Me confirman el número de seguimiento?",
+            "channel": "phone",
+            "id": 366
+          },
+          {
+            "agent": "",
+            "at": "16/04/2026 18:20",
+            "body": "Cliente no responde",
+            "channel": "phone",
+            "id": 413
+          },
+          {
+            "agent": "Inés Torres",
+            "at": "17/04/2026 00:41",
+            "body": "¿Me confirman el número de seguimiento?",
+            "channel": "email",
+            "id": 429
+          }
+        ],
+        "priority": "alta",
+        "status": "closed",
+        "subject": "Error al pagar \u003ctarjeta\u003e"
+      }
+    ]
+  }
+}

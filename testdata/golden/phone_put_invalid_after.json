@@ -1,0 +1,16 @@
+{
+  "request": {
+    "name": "phone_put_invalid_after",
+    "method": "GET",
+    "path": "/customers/4"
+  },
+  "status": 200,
+  "body": {
+    "created": "21/01/2026 06:06",
+    "email": "cliente0004@example.com",
+    "id": 4,
+    "name": "ACOSTA, Valeria",
+    "phone": "15-0000-0000",
+    "segment": "pyme"
+  }
+}

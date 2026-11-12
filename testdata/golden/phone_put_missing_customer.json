@@ -1,0 +1,12 @@
+{
+  "request": {
+    "name": "phone_put_missing_customer",
+    "method": "PUT",
+    "path": "/customers/999/phone",
+    "body": "{\"phone\":\"1144445555\"}"
+  },
+  "status": 200,
+  "body": {
+    "ok": true
+  }
+}

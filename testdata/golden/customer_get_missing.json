@@ -1,0 +1,11 @@
+{
+  "request": {
+    "name": "customer_get_missing",
+    "method": "GET",
+    "path": "/customers/999"
+  },
+  "status": 200,
+  "body": {
+    "error": "not found"
+  }
+}

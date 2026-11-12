@@ -1,0 +1,63 @@
+{
+  "request": {
+    "name": "tickets_open_5",
+    "method": "GET",
+    "path": "/tickets?status=open\u0026limit=5"
+  },
+  "status": 200,
+  "body": {
+    "count": 5,
+    "items": [
+      {
+        "agent": "Óscar Sosa",
+        "created": "31/08/2026 11:08",
+        "customer": "ORTIZ, Ñandú",
+        "id": 94,
+        "interactions": 6,
+        "priority": "alta",
+        "status": "open",
+        "subject": "Error al pagar \u003ctarjeta\u003e"
+      },
+      {
+        "agent": "Óscar Sosa",
+        "created": "31/01/2026 18:46",
+        "customer": "NÚÑEZ, Facundo",
+        "id": 46,
+        "interactions": 2,
+        "priority": "alta",
+        "status": "open",
+        "subject": "Cambio de domicilio"
+      },
+      {
+        "agent": "Inés Torres",
+        "created": "30/09/2026 15:00",
+        "customer": "IBÁÑEZ, Tomás",
+        "id": 58,
+        "interactions": 4,
+        "priority": "media",
+        "status": "open",
+        "subject": "Reclamo de facturación"
+      },
+      {
+        "agent": "Natalia Pereyra",
+        "created": "29/05/2026 19:36",
+        "customer": "IBÁÑEZ, Facundo",
+        "id": 73,
+        "interactions": 8,
+        "priority": "media",
+        "status": "open",
+        "subject": "No llega el pedido"
+      },
+      {
+        "agent": "Inés Torres",
+        "created": "28/08/2026 15:06",
+        "customer": "FERNÁNDEZ, Lucía",
+        "id": 26,
+        "interactions": 7,
+        "priority": "baja",
+        "status": "open",
+        "subject": "Cambio de domicilio"
+      }
+    ]
+  }
+}

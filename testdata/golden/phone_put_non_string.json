@@ -1,0 +1,12 @@
+{
+  "request": {
+    "name": "phone_put_non_string",
+    "method": "PUT",
+    "path": "/customers/3/phone",
+    "body": "{\"phone\":\"1144445555\",\"extra\":1}"
+  },
+  "status": 400,
+  "body": {
+    "error": "bad json"
+  }
+}

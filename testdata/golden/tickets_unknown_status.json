@@ -1,0 +1,12 @@
+{
+  "request": {
+    "name": "tickets_unknown_status",
+    "method": "GET",
+    "path": "/tickets?status=nope"
+  },
+  "status": 200,
+  "body": {
+    "count": 0,
+    "items": []
+  }
+}

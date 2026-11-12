@@ -1,0 +1,16 @@
+{
+  "request": {
+    "name": "phone_put_after",
+    "method": "GET",
+    "path": "/customers/3"
+  },
+  "status": 200,
+  "body": {
+    "created": "05/01/2026 10:12",
+    "email": "cliente0003@example.com",
+    "id": 3,
+    "name": "JUÁREZ, Ñandú",
+    "phone": "011 4000-1234",
+    "segment": "retail"
+  }
+}

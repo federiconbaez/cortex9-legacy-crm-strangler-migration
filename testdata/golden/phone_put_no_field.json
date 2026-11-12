@@ -1,0 +1,12 @@
+{
+  "request": {
+    "name": "phone_put_no_field",
+    "method": "PUT",
+    "path": "/customers/5/phone",
+    "body": "{}"
+  },
+  "status": 200,
+  "body": {
+    "ok": true
+  }
+}

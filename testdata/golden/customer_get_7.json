@@ -1,0 +1,16 @@
+{
+  "request": {
+    "name": "customer_get_7",
+    "method": "GET",
+    "path": "/customers/7"
+  },
+  "status": 200,
+  "body": {
+    "created": "01/01/2026 23:50",
+    "email": "cliente0007@example.com",
+    "id": 7,
+    "name": "QUIROGA, Elena",
+    "phone": "(11) 8993 7961",
+    "segment": "retail"
+  }
+}

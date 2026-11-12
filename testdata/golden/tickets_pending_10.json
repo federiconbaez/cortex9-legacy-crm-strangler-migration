@@ -1,0 +1,113 @@
+{
+  "request": {
+    "name": "tickets_pending_10",
+    "method": "GET",
+    "path": "/tickets?status=pending\u0026limit=10"
+  },
+  "status": 200,
+  "body": {
+    "count": 10,
+    "items": [
+      {
+        "agent": "Lucía Gómez",
+        "created": "31/05/2026 19:41",
+        "customer": "LÓPEZ, Natalia",
+        "id": 112,
+        "interactions": 7,
+        "priority": "media",
+        "status": "pending",
+        "subject": "Producto dañado"
+      },
+      {
+        "agent": "Natalia Pereyra",
+        "created": "29/03/2026 05:44",
+        "customer": "PEREYRA, Sofía",
+        "id": 23,
+        "interactions": 5,
+        "priority": "baja",
+        "status": "pending",
+        "subject": "No llega el pedido"
+      },
+      {
+        "agent": "Natalia Pereyra",
+        "created": "28/08/2026 23:57",
+        "customer": "LÓPEZ, Facundo",
+        "id": 118,
+        "interactions": 4,
+        "priority": "alta",
+        "status": "pending",
+        "subject": "Reclamo de facturación"
+      },
+      {
+        "agent": "Julián Juárez",
+        "created": "28/06/2026 03:01",
+        "customer": "PEREYRA, Hernán",
+        "id": 9,
+        "interactions": 7,
+        "priority": "media",
+        "status": "pending",
+        "subject": "Baja del servicio"
+      },
+      {
+        "agent": "Julián Juárez",
+        "created": "27/04/2026 04:00",
+        "customer": "JUÁREZ, Facundo",
+        "id": 109,
+        "interactions": 7,
+        "priority": "alta",
+        "status": "pending",
+        "subject": "Cambio de domicilio"
+      },
+      {
+        "agent": "Julián Juárez",
+        "created": "27/03/2026 02:50",
+        "customer": "GÓMEZ, Hernán",
+        "id": 64,
+        "interactions": 7,
+        "priority": "media",
+        "status": "pending",
+        "subject": "Baja del servicio"
+      },
+      {
+        "agent": "Inés Torres",
+        "created": "27/03/2026 02:13",
+        "customer": "LÓPEZ, Facundo",
+        "id": 93,
+        "interactions": 5,
+        "priority": "alta",
+        "status": "pending",
+        "subject": "Devolución pendiente"
+      },
+      {
+        "agent": "Julián Juárez",
+        "created": "26/07/2026 05:35",
+        "customer": "NÚÑEZ, Facundo",
+        "id": 119,
+        "interactions": 9,
+        "priority": "media",
+        "status": "pending",
+        "subject": "Reclamo de facturación"
+      },
+      {
+        "agent": "Inés Torres",
+        "created": "25/05/2026 10:57",
+        "customer": "CASTRO, Gabriela",
+        "id": 50,
+        "interactions": 4,
+        "priority": "alta",
+        "status": "pending",
+        "subject": "Cambio de domicilio"
+      },
+      {
+        "agent": "Julián Juárez",
+        "created": "23/10/2026 13:03",
+        "customer": "FERNÁNDEZ, Lucía",
+        "id": 70,
+        "interactions": 6,
+        "priority": "media",
+        "status": "pending",
+        "subject": "Cambio de domicilio"
+      }
+    ]
+  }
+}
